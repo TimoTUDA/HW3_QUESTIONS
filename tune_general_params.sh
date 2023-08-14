@@ -20,8 +20,8 @@
 #SBATCH -p kurs00067                                                                                                                                                                                                    
 #SBATCH --reservation=kurs00067
 
-#SBATCH -o "/home/te27fahi/logs/sbatch/%A_%a.out
-#SBATCH -e "/home/te27fahi/logs/sbatch/%A_%a.err
+#SBATCH -o /home/te27fahi/logs/sbatch/%A_%a.out
+#SBATCH -e /home/te27fahi/logs/sbatch/%A_%a.err
 ## <your path> refers to the directory where you would like your outputs. Be sure to create folders "logs/results" and "logs/sbatch" in 
 ## <your path> before running this script
 

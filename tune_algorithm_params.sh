@@ -20,12 +20,12 @@
 #SBATCH -p kurs00067                                                                                                                                                                                                    
 #SBATCH --reservation=kurs00067
 
-#SBATCH -o "C:/Users/Timo/Desktop/HW3_QUESTIONS/logs/sbatch/%A_%a.out
-#SBATCH -e "C:/Users/Timo/Desktop/HW3_QUESTIONS/logs/sbatch/%A_%a.err
+#SBATCH -o "te27fahi/logs/sbatch/%A_%a.out
+#SBATCH -e "te27fahi/logs/sbatch/%A_%a.err
 ## <your path> refers to the directory where you would like your outputs. Be sure to create folders "logs/results" and "logs/sbatch" in 
 ## <your path> before running this script
 
-results_dir=<your path>/logs/results
+results_dir=te27fahi/logs/results
 python tune_algorithm_params.py --results_dir $results_dir --seed $SLURM_ARRAY_TASK_ID --algorithm <algorithm> --hyperparam_value <value>
 wait # This will wait until both scripts finish
 echo "########################################################################"
